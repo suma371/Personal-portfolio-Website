@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Suma M Shavi - Fullstack Developer based in Bengaluru. Expertise in Java, Spring Boot, Hibernate, MySQL, and React. Crafting beautiful and performant web experiences." />
+    <meta name="keywords"
+        content="Suma M Shavi, Fullstack Developer, Java Developer, Spring Boot, React Developer, Tap Academy, Bengaluru, Software Engineer, Portfolio" />
+    <meta name="author" content="Suma M Shavi" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Suma M Shavi | Fullstack Developer" />
+    <meta property="og:description"
+        content="Explore the portfolio of Suma M Shavi, a Fullstack Developer specializing in modern web technologies." />
+    <meta property="og:image" content="assets/profile.jpg" />
+    <meta property="og:url" content="https://suma371.github.io/Personal-portfolio-Website/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Suma M Shavi | Fullstack Developer" />
+    <meta name="twitter:description"
+        content="Explore the portfolio of Suma M Shavi, a Fullstack Developer specializing in modern web technologies." />
+    <meta name="twitter:image" content="assets/profile.jpg" />
+
+    <title>Suma M Shavi | Fullstack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- ============ BACKGROUND ANIMATION ============ -->
+    <div class="bg-animation">
+        <div class="blob blob-p1"></div>
+        <div class="blob blob-p2"></div>
+        <div class="blob blob-p3"></div>
+        <div class="bg-noise"></div>
+    </div>
+
+    <!-- ============ CURSOR FOLLOWER ============ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-circle"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>SMS<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+                <li><a href="#education" class="nav-link" data-nav="education">Education</a></li>
+                <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-nav="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bx bx-moon" id="themeIcon"></i>
+                </button>
+                <a href="assets/Suma_RESUME.pdf" download class="btn btn-primary btn-sm">
+                    <i class="bx bx-download"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for work
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Suma M Shavi</span>
+                </h1>
+
+                <div class="hero-typewriter">
+                    <span>I build </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+
+                <p class="hero-description">
+                    Fullstack Developer at <strong>Tap Academy</strong> — crafting
+                    beautiful, performant web experiences from pixel-perfect UIs to
+                    scalable backend systems.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Let's Talk <i class="bx bx-chat"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span><span>+</span>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span><span>+</span>
+                        <p>Months Exp</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span>+</span>
+                        <p>Clients</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image" data-aos="fade-left">
+                <div class="hero-img-wrapper">
+                    <div class="img-ring"></div>
+                    <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" id="profileImg" />
+                    <div class="img-badge">
+                        <i class="bx bx-code-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="bx bx-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-col" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <img src="assets/about.jpg" alt="About Me" class="about-img" />
+                        <div class="about-experience-card">
+                            <span class="exp-number">6+</span>
+                            <span class="exp-label">Months of Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col" data-aos="fade-left">
+                    <h3>Passionate Developer & Problem Solver</h3>
+                    <p class="about-text">
+                        Aspiring Java Fullstack Developer with expertise in Java, Spring Boot, and
+                        full-stack web development. Proficient in building scalable enterprise
+                        applications using Spring Framework, Hibernate ORM, and React.
+                    </p>
+                    <p class="about-text">
+                        Strong foundation in data structures, algorithms, and database design.
+                        Experienced in developing RESTful APIs and delivering end-to-end solutions.
+                        Quick learner with proven ability to implement modern development practices
+                        and contribute to high-impact projects.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Suma M Shavi</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Role:</span>
+                            <span class="info-value">Fullstack Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Academy:</span>
+                            <span class="info-value">Tap Academy</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">sumashavi09@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Bengaluru, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value available">Available</span>
+                        </div>
+                    </div>
+
+                    <a href="assets/Suma_RESUME.pdf" download class="btn btn-primary">
+                        Download CV <i class="bx bx-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            </div>
+
+            <div class="timeline-container">
+
+                <!-- Entry 1: Bachelor's Degree -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">2021 – 2025</span>
+                                <h3 class="timeline-title">Bachelor of Engineering</h3>
+                                <p class="timeline-org">Electrical &amp; Electronics Engineering</p>
+                                <p class="timeline-desc">
+                                    Smt. Kamala and Sri Venkappa M. Agadi College of Engineering &amp; Technology,
+                                    Laxmeshwar, Karnataka.
+                                </p>
+                            </div>
+                            <span class="edu-badge">First Class with Distinction</span>
+                        </div>
+                        <button class="btn-marksheet"
+                            onclick="openMarksheet('assets/degree CF.jpg', 'B.E. Degree Certificate — VTU Belagavi')"
+                            aria-label="View B.E. marksheet">
+                            <i class="bx bx-file"></i> View Marksheet
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Entry 2: Pre-University -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">2021</span>
+                                <h3 class="timeline-title">Pre-University (Science)</h3>
+                                <p class="timeline-org">SJSVV Independent PU Science College</p>
+                                <p class="timeline-desc">
+                                    Gadag, Karnataka. &nbsp;
+                                </p>
+                            </div>
+                            <span class="edu-badge edu-badge--blue">First Class</span>
+                        </div>
+                        <button class="btn-marksheet"
+                            onclick="openMarksheet('assets/12th markscard.jpg', 'PU Certificate — Dept. of Pre-University Education, Karnataka')"
+                            aria-label="View PU marksheet">
+                            <i class="bx bx-file"></i> View Marksheet
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MARKSHEET MODAL ============ -->
+    <div class="marksheet-overlay" id="marksheetOverlay" role="dialog" aria-modal="true"
+        aria-labelledby="marksheetTitle">
+        <div class="marksheet-modal">
+            <div class="marksheet-modal-header">
+                <p class="marksheet-modal-title" id="marksheetTitle"></p>
+                <div class="marksheet-controls">
+                    <button class="ms-ctrl" id="msZoomIn" title="Zoom in"><i class="bx bx-zoom-in"></i></button>
+                    <button class="ms-ctrl" id="msZoomOut" title="Zoom out"><i class="bx bx-zoom-out"></i></button>
+                    <button class="ms-ctrl" id="msClose" title="Close"><i class="bx bx-x"></i></button>
+                </div>
+            </div>
+            <div class="marksheet-img-wrap">
+                <img id="marksheetImg" src="" alt="Marksheet" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <!-- Skills content will be added -->
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Tools & Others</button>
+            </div>
+
+            <div class="skills-content">
+                <div class="tab-panel active" id="frontend">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="backend">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="tools">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Work &amp; Training</span>
+                <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Entry 1: Internship -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">August 2025 – January 2026</span>
+                                <h3 class="timeline-title">Full-Stack Java Developer Intern</h3>
+                                <p class="timeline-org">TAP Academy</p>
+                                <p class="timeline-desc">
+                                    <i class="bx bx-map"></i> Bengaluru, Karnataka, India
+                                </p>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Developed and deployed full-stack applications using JAVA, Spring Boot, Hibernate, MySQL,
+                            React, and REST APIs, following clean and scalable architecture. Built backend modules with
+                            Spring Boot, implemented secure authentication, and optimized API performance. Designed
+                            responsive React components, improved page load speed, and enhanced overall user experience.
+                        </p>
+                        <a href="assets/certificates/__Suma__Internship.pdf" target="_blank" class="btn-certificate">
+                            <i class="bx bx-certification"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's build something amazing together</h3>
+                    <p>Feel free to reach out for collaborations, freelance work, or just a friendly hello!</p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:sumashavi09@gmail.com" class="contact-card">
+                            <i class="bx bx-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>sumashavi09@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+916361535394" class="contact-card">
+                            <i class="bx bx-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p>+91 6361535394</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <i class="bx bx-map"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/suma371" target="_blank" class="social-link" aria-label="GitHub"><i
+                                class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/suma-shavi-00523a231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="social-link" aria-label="LinkedIn"><i
+                                class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="bx bx-send"></i>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span>SMS<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Crafted with <i class="bx bxs-heart"></i> by <strong>Suma M Shavi</strong></p>
+                <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+    </footer>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
