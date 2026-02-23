@@ -92,7 +92,7 @@ const experienceData = [
     location: "Bengaluru, Karnataka, India",
     duration: "August 2025 – January 2026",
     desc: "Developed and deployed full-stack applications using JAVA, Spring Boot, Hibernate, MySQL, React, and REST APIs, following clean and scalable architecture. Built backend modules with Spring Boot, implemented secure authentication, and optimized API performance. Designed responsive React components, improved page load speed, and enhanced overall user experience.",
-    certificateUrl: "assets/certificates/__Suma__Internship.pdf",
+    certificateUrl: "assets/certificates/Suma_Internship.pdf",
   },
 ];
 
